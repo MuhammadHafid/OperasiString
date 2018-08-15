@@ -38,8 +38,18 @@ public class commit2 {
         return kalimat;
     }
     String convert = vocal2Angka(kalimat);
+    
+    private static void tampilPerKata(String kalimat, String convert){
+        String[]arrKal = kalimat.split(" ");
+        String[]arrcon = convert.split(" ");
+        
+        for(int i=0;i<arrKal.length;i++)
+            System.out.println(arrKal[i]+" => "+arrcon[i]);
+        
+         tampilPerKata(kalimat,convert);
         
     
+}
 }
 
 
